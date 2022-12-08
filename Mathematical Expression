@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+    char s,q;
+    cin>> a>>s>>b>>q>>c;
+
+   bool x = ( s == '+'&& a+b == c || s == '*' && a*b == c || s=='-'&& a-b ==c );
+
+       if(x == 1)
+          cout<<"Yes";
+       else
+       {
+           if (s=='+')
+             cout<< a + b;
+           else if (s=='-')
+             cout<< a-b;
+           else
+             cout<<a*b;
+       }
+
+    return 0;
+}
